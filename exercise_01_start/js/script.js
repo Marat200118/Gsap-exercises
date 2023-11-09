@@ -21,9 +21,9 @@ const init = () => {
 
   tl.to(".ball", {
     duration: 1,
-    rotation: 180,
+    rotation: gsap.utils.wrap([180, -180]),
     transformOrigin: "center right",
-    stagger: 0.5,
+    stagger: 1,
   });
 
   tl.to(".ball", {
