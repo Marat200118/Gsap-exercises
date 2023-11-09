@@ -5,7 +5,7 @@ let tl;
 const init = () => {
   console.log(gsap.version);
   gsap.set(".banner", { autoAlpha: 1 });
-  tl = gsap.timeline({ repeat: maxPlays });
+  tl = gsap.timeline({ repeat: maxPlays, onComplete: onTimeLineComplete });
 
   tl.from("h1", {
     duration: 1,
@@ -31,11 +31,14 @@ const init = () => {
     stagger: 0.2,
   });
 
-  if (count === 3) {
-    tl.from(".footer", {
+  const onTimeLineComplete = () => {
+    console.log("timeline complete");
+    gsap.to(".banner, .footer", {
       backgroundColor: "green",
+      repeat: 1,
+      yoyo: true,
     });
-  }
+  };
 };
 
 init();
