@@ -15,21 +15,21 @@ const init = () => {
       pin: true,
     },
   });
-  /* 
-  gsap.to(".square", {
-    //x: 700,
-    duration: 3,
-    scrollTrigger: {
-      trigger: ".square2",
-      start: "top 80%",
-      end: "top 30%",
-      toggleClass: "white",
-      markers: { fontSize: "25px", fontWeight: "bold" },
-      scrub: true,
-      pin: ".square",
-      pinSpacing: false, //set to true to see extra padding added
-    },
-  });
-  */
+  
+  // gsap.to(".square", {
+  //   //x: 700,
+  //   duration: 3,
+  //   scrollTrigger: {
+  //     trigger: ".square2",
+  //     start: "top 80%",
+  //     end: "top 30%",
+  //     toggleClass: "white",
+  //     markers: { fontSize: "25px", fontWeight: "bold" },
+  //     scrub: true,
+  //     pin: ".square",
+  //     pinSpacing: false, //set to true to see extra padding added
+  //   },
+  // });
+  
 };
 init();

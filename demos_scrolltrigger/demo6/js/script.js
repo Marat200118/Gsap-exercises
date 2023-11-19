@@ -11,7 +11,7 @@ const init = () => {
       end: "bottom 20%",
       toggleClass: "white",
       markers: { fontSize: "25px", fontWeight: "bold" },
-      scrub: 0.5, //true
+      scrub: 2, //true
     },
   });
 };
